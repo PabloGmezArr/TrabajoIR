@@ -123,6 +123,7 @@ a:hover {
     .content {
         flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
         align-items: center; /* Centrar elementos */
+        overflow-y: auto; /* Permitir desplazamiento si el texto es muy largo */
     }
 
     .image-container {
