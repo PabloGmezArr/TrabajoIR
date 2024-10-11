@@ -1,4 +1,3 @@
-/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +12,8 @@ body {
     align-items: center;
     height: 100vh;
     color: #333;
-    overflow: hidden; /* Evitar el desbordamiento en el body */
 }
 
-/* Contenedor principal */
 .container {
     background-color: white;
     padding: 30px;
@@ -24,12 +21,10 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     text-align: center;
     max-width: 900px; /* Aumentamos un poco el ancho máximo */
-    width: 90%; /* Cambiar a un porcentaje para mayor adaptabilidad */
+    width: 100%;
     border: 2px solid #f7cac9;
-    overflow: hidden; /* Evitar que el contenido se desborde */
 }
 
-/* Títulos */
 h1 {
     font-family: "Dancing Script", cursive;
     color: #333;
@@ -41,15 +36,15 @@ h1 {
 .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-between; /* Mantener el espacio entre la imagen y la descripción */
+    gap: 20px; /* Espacio entre imagen y descripción */
     margin-bottom: 20px;
     width: 100%;
 }
 
 /* Imagen */
 .image-container {
-    flex: 1 1 70%; /* La imagen ocupará el 70% del espacio */
+    flex: 0 0 40%; /* La imagen ocupará el 40% del espacio */
 }
 
 .centered-image {
@@ -61,12 +56,11 @@ h1 {
 
 /* Descripción */
 .description {
-    flex: 1 1 30%; /* La descripción ocupará el 30% del espacio */
+    flex: 1; /* La descripción ocupará el resto del espacio disponible */
     text-align: left;
     color: black;
-    max-width: 500px; /* Añadir ancho máximo para que no se extienda indefinidamente */
-    word-wrap: break-word; /* Forzar el salto de línea si es necesario */
-    overflow: hidden; /* Evitar desbordamiento */
+    max-height: 400px; /* Añadir un alto máximo para evitar que se desborde */
+    overflow-y: auto; /* Permitir desplazamiento si el texto es muy largo */
 }
 
 .description p {
@@ -96,19 +90,18 @@ a:hover {
         align-items: center; /* Centrar elementos */
     }
 
+    .image-container {
+        margin-bottom: 20px; /* Añadir espacio debajo de la imagen */
+        flex: 0 0 auto; /* Asegurar que la imagen no se estire */
+    }
+
     .centered-image {
-        max-width: 100%; /* La imagen se mantiene a la izquierda y ocupa el 100% del ancho */
-        margin-bottom: 20px; /* Espacio entre imagen y texto */
+        max-width: 80%; /* Aumentar el ancho en móviles */
     }
 
     .description {
-        text-align: center; /* Mantener el texto centrado en pantallas pequeñas */
-        font-size: 1rem; /* Ajuste de tamaño de fuente */
-        max-width: 100%; /* En móviles, la descripción tomará el 100% del ancho disponible */
+        max-width: 100%; /* Asegurar que la descripción ocupe el 100% en móviles */
     }
 }
-
-
-
 
 
