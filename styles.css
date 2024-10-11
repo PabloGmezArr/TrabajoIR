@@ -79,7 +79,7 @@ h1 {
 
 /* Imagen */
 .image-container {
-    flex: 0 0 40%; /* La imagen ocupará el 40% del espacio */
+    flex: 0 0 30%; /* La imagen ocupará el 40% del espacio */
 }
 
 .centered-image {
