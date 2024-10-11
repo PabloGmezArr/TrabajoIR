@@ -83,7 +83,7 @@ h1 {
 }
 
 .centered-image {
-    width: 100%;
+    width: 50%;
     max-width: 300px; /* Máximo tamaño de la imagen */
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
