@@ -362,5 +362,290 @@ button:focus {
     }
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+}
+
+/* Fondo con gradiente suave */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee); /* Fondo romántico, tonos rosas y azules */
+    z-index: -1;
+}
+
+/* Contenedor de los botones */
+.button-container {
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Título y descripción */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+/* Botones con efecto suavizado */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 105, 180, 0.8); /* Color rosa claro */
+    color: white;
+    border-radius: 8px;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+    font-smoothing: antialiased;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgba(255, 105, 180, 1); /* Color rosa más intenso */
+    transform: translateY(-5px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Elementos decorativos */
+.decorative-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Corazones decorativos flotantes */
+.heart {
+    position: absolute;
+    background-color: rgba(255, 105, 180, 0.3);
+    width: 80px;
+    height: 80px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 80%, 18% 100%, 0% 38%);
+    animation: float 6s ease-in-out infinite;
+}
+
+.heart-1 {
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.heart-2 {
+    bottom: 15%;
+    right: 20%;
+    animation-delay: 2s;
+}
+
+/* Círculo y triángulo abstractos */
+.circle {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: 5%;
+    left: 10%;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 200px solid rgba(255, 255, 255, 0.1);
+    bottom: 10%;
+    right: 15%;
+}
+
+/* Animación flotante para los corazones */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    .button-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .triangle {
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 150px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .heart {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(135deg, #f7cac9, #92a8d1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 900px; /* Aumentamos un poco el ancho máximo */
+    width: 100%;
+    border: 2px solid #f7cac9;
+}
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Flexbox para la imagen y la descripción */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mantener el espacio entre la imagen y la descripción */
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Imagen */
+.image-container {
+    flex: 1 1 40%; /* La imagen ocupará el 40% del espacio */
+}
+
+.centered-image {
+    width: 100%;
+    max-width: 300px; /* Máximo tamaño de la imagen */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Descripción */
+.description {
+    flex: 1 1 60%; /* La descripción ocupará el 60% del espacio */
+    text-align: left;
+    color: black;
+    max-width: 500px; /* Añadir ancho máximo para que no se extienda indefinidamente */
+    word-wrap: break-word; /* Forzar el salto de línea si es necesario */
+}
+
+.description p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+    white-space: normal; /* Asegurar que el texto salte de línea */
+}
+
+/* Estilo del enlace */
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: row; /* Mantener imagen y texto en la misma fila */
+        gap: 10px; /* Reducimos el espacio entre ellos en pantallas pequeñas */
+    }
+
+    .centered-image {
+        max-width: 40%; /* La imagen se mantiene a la izquierda y ocupa el 40% del ancho */
+    }
+
+    .description {
+        text-align: left; /* Mantener el texto alineado a la izquierda */
+        font-size: 1rem; /* Ajuste de tamaño de fuente */
+        max-width: 100%; /* En móviles, la descripción tomará el 100% del ancho disponible */
+    }
+}
+
+
 
 
