@@ -606,6 +606,7 @@ h1 {
     color: black;
     max-width: 500px; /* Añadir ancho máximo para que no se extienda indefinidamente */
     word-wrap: break-word; /* Forzar el salto de línea si es necesario */
+    overflow: auto;
 }
 
 .description p {
@@ -614,6 +615,7 @@ h1 {
     line-height: 1.6;
     margin: 0;
     white-space: normal; /* Asegurar que el texto salte de línea */
+    overflow: auto;
 }
 
 /* Estilo del enlace */
