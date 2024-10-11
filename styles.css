@@ -1,548 +1,3 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f3f4f6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #333;
-}
-
-.container {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
-    margin: 20px;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 26px;
-    color: #333;
-    margin: 0;
-    padding: 0 0 20px 0;
-    border-bottom: 2px solid #e0e0e0;
-    font-weight: 600;
-}
-
-.form-header {
-    border-bottom: 2px solid #e0e0e0;
-    margin-bottom: 20px;
-}
-
-h2 {
-    margin: 0;
-    padding-bottom: 10px;
-    color: #4285f4;
-    font-weight: 600;
-}
-
-a.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #555;
-    font-weight: 500;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus {
-    border-color: #4285f4;
-    outline: none;
-}
-
-button,
-a.button {
-    display: inline-block;
-    width: 100%;
-    padding: 14px;
-    background-color: #4285f4;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-button:hover,
-a.button:hover {
-    background-color: #357ae8;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #888;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-        margin: 10px;
-    }
-
-    button,
-    a.button {
-        padding: 12px;
-        
-        font-size: 14px;
-        
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    header h1 {
-        font-size: 22px;
-    }
-}
-
-.button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-    .button-group {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    font-size: 32px;
-    color: #d81b60; /* Color del título rosa brillante */
-    margin: 0;
-    padding: 20px 0;
-    border-bottom: 2px solid #d81b60; /* Línea de separación rosa brillante */
-    font-weight: 600;
-}
-
-.love-message {
-    background-color: #fff; /* Color de fondo blanco */
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.love-message h1 {
-    margin-bottom: 20px;
-    color: #555; /* Color de texto gris oscuro */
-    font-size: 37px;
-    text-align: center;
-    line-height: 1.6;
-}
-
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    color: #888; /* Color de texto gris */
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-}
-
-/* Fondo con gradiente suave */
-.background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee); /* Fondo romántico, tonos rosas y azules */
-    z-index: -1;
-}
-
-/* Contenedor de los botones */
-.button-container {
-    text-align: justify;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-}
-
-/* Título y descripción */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #f0f0f0;
-}
-
-/* Botones con efecto suavizado */
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(255, 105, 180, 0.8); /* Color rosa claro */
-    color: white;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    font-smoothing: antialiased;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    background-color: rgba(255, 105, 180, 1); /* Color rosa más intenso */
-    transform: translateY(-5px);
-}
-
-button:focus {
-    outline: none;
-}
-
-/* Elementos decorativos */
-.decorative-elements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-/* Corazones decorativos flotantes */
-.heart {
-    position: absolute;
-    background-color: rgba(255, 105, 180, 0.3);
-    width: 80px;
-    height: 80px;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 80%, 18% 100%, 0% 38%);
-    animation: float 6s ease-in-out infinite;
-}
-
-.heart-1 {
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.heart-2 {
-    bottom: 15%;
-    right: 20%;
-    animation-delay: 2s;
-}
-
-/* Círculo y triángulo abstractos */
-.circle {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    top: 5%;
-    left: 10%;
-}
-
-.triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 200px solid rgba(255, 255, 255, 0.1);
-    bottom: 10%;
-    right: 15%;
-}
-
-/* Animación flotante para los corazones */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Para pantallas pequeñas */
-@media (max-width: 600px) {
-    .button-container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .circle {
-        width: 150px;
-        height: 150px;
-    }
-
-    .triangle {
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-bottom: 150px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .heart {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Arial", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-}
-
-/* Fondo con gradiente suave */
-.background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee); /* Fondo romántico, tonos rosas y azules */
-    z-index: -1;
-}
-
-/* Contenedor de los botones */
-.button-container {
-    text-align: justify;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px);
-}
-
-/* Título y descripción */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #f0f0f0;
-}
-
-/* Botones con efecto suavizado */
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    background-color: rgba(255, 105, 180, 0.8); /* Color rosa claro */
-    color: white;
-    border-radius: 8px;
-    transition:
-        background-color 0.3s ease,
-        transform 0.2s ease;
-    font-smoothing: antialiased;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-    background-color: rgba(255, 105, 180, 1); /* Color rosa más intenso */
-    transform: translateY(-5px);
-}
-
-button:focus {
-    outline: none;
-}
-
-/* Elementos decorativos */
-.decorative-elements {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-/* Corazones decorativos flotantes */
-.heart {
-    position: absolute;
-    background-color: rgba(255, 105, 180, 0.3);
-    width: 80px;
-    height: 80px;
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 50% 80%, 18% 100%, 0% 38%);
-    animation: float 6s ease-in-out infinite;
-}
-
-.heart-1 {
-    top: 20%;
-    left: 10%;
-    animation-delay: 0s;
-}
-
-.heart-2 {
-    bottom: 15%;
-    right: 20%;
-    animation-delay: 2s;
-}
-
-/* Círculo y triángulo abstractos */
-.circle {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    top: 5%;
-    left: 10%;
-}
-
-.triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 200px solid rgba(255, 255, 255, 0.1);
-    bottom: 10%;
-    right: 15%;
-}
-
-/* Animación flotante para los corazones */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Para pantallas pequeñas */
-@media (max-width: 600px) {
-    .button-container {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-
-    .circle {
-        width: 150px;
-        height: 150px;
-    }
-
-    .triangle {
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-bottom: 150px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .heart {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -561,14 +16,49 @@ body {
 
 .container {
     background-color: white;
-    padding: 30px;
-    border-radius: 16px;
+    padding: 40px; /* Aumentar el relleno para más espacio */
+    border-radius: 20px; /* Bordes más redondeados */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     text-align: center;
-    max-width: 900px; /* Aumentamos un poco el ancho máximo */
+    max-width: 900px; 
     width: 100%;
     border: 2px solid #f7cac9;
+    position: relative; /* Necesario para la sombra interna */
+    overflow: hidden; /* Para evitar que la sombra interna se salga del contenedor */
+    animation: slideIn 0.5s ease-in-out; /* Animación al aparecer */
+    background: linear-gradient(white, rgba(255, 255, 255, 0.8)), url('ruta/a/tu/textura.png'); /* Textura de fondo opcional */
 }
+
+/* Sombra interna */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.05); /* Sombra interna */
+    border-radius: 16px; /* Debe coincidir con el borde del contenedor */
+    z-index: 0; /* Asegura que esté detrás del contenido */
+}
+
+.container > * {
+    position: relative; /* Para que el contenido esté en el frente */
+    z-index: 1; /* Asegura que el contenido esté por encima de la sombra interna */
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 h1 {
     font-family: "Dancing Script", cursive;
@@ -582,14 +72,14 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Mantener el espacio entre la imagen y la descripción */
-    gap: 20px;
+    gap: 20px; /* Espacio entre imagen y descripción */
     margin-bottom: 20px;
     width: 100%;
 }
 
 /* Imagen */
 .image-container {
-    flex: 1 1 70%; /* La imagen ocupará el 40% del espacio */
+    flex: 0 0 40%; /* La imagen ocupará el 40% del espacio */
 }
 
 .centered-image {
@@ -601,12 +91,11 @@ h1 {
 
 /* Descripción */
 .description {
-    flex: 1 1 30%; /* La descripción ocupará el 60% del espacio */
+    flex: 1; /* La descripción ocupará el resto del espacio disponible */
     text-align: left;
     color: black;
-    max-width: 500px; /* Añadir ancho máximo para que no se extienda indefinidamente */
-    word-wrap: break-word; /* Forzar el salto de línea si es necesario */
-    overflow: auto;
+    max-height: 400px; /* Añadir un alto máximo para evitar que se desborde */
+    overflow-y: auto; /* Permitir desplazamiento si el texto es muy largo */
 }
 
 .description p {
@@ -615,7 +104,6 @@ h1 {
     line-height: 1.6;
     margin: 0;
     white-space: normal; /* Asegurar que el texto salte de línea */
-    overflow: auto;
 }
 
 /* Estilo del enlace */
@@ -633,19 +121,20 @@ a:hover {
 /* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
     .content {
-        flex-direction: row; /* Mantener imagen y texto en la misma fila */
-        gap: 10px; /* Reducimos el espacio entre ellos en pantallas pequeñas */
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .image-container {
+        margin-bottom: 20px; /* Añadir espacio debajo de la imagen */
+        flex: 0 0 auto; /* Asegurar que la imagen no se estire */
     }
 
     .centered-image {
-        max-width: 40%; /* La imagen se mantiene a la izquierda y ocupa el 40% del ancho */
+        max-width: 80%; /* Aumentar el ancho en móviles */
     }
 
     .description {
-        text-align: left; /* Mantener el texto alineado a la izquierda */
-        font-size: 1rem; /* Ajuste de tamaño de fuente */
-        max-width: 100%; /* En móviles, la descripción tomará el 100% del ancho disponible */
+        max-width: 100%; /* Asegurar que la descripción ocupe el 100% en móviles */
     }
 }
-
-

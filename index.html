@@ -9,19 +9,16 @@
 <body>
     <div class="background-overlay"></div>
     
-    <div class="decorative-elements">
-        <div class="circle"></div>
-        <div class="triangle"></div>
-        <div class="heart heart-1"></div>
-        <div class="heart heart-2"></div>
-    </div>
+   
 
-    <div class="button-container">
+    <div class="container"> <!-- Añadido contenedor -->
         <h1>Banco de Recuerdos</h1>
         <p>Para que siempre puedas tener recuerdos en cualquier momento :)</p>
-        <button onclick="window.location.href='parte1.html'">Mi petición de novios</button>
-        <button onclick="window.location.href='parte2.html'">Fotos juntos</button>
-        <button id="proximamente-btn">Próximamente</button>
+        <div class="button-container"> <!-- Clases para mejorar estilos -->
+            <button onclick="window.location.href='parte1.html'">Mi petición de novios</button>
+            <button onclick="window.location.href='parte2.html'">Fotos juntos</button>
+            <button id="proximamente-btn">Próximamente</button>
+        </div>
     </div>
 
     <script>
